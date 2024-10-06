@@ -318,20 +318,23 @@ nav .fas {
 @media only screen and (max-width: 600px) {
     #header {
         background-image: url(images/phone-background.png);
+        background-size: cover; /* Ensure background image covers the header */
+        background-position: center; /* Center the background image */
     }
 
     .header-text {
-        margin-top: 100%;
-        font-size: 16px;
+        margin-top: 80%; /* Reduced margin for better visibility */
+        font-size: 14px; /* Slightly smaller font for the header text */
     }
 
     .header-text h1 {
-        font-size: 30px;
+        font-size: 28px; /* Smaller font size for the main title */
+        line-height: 1.2; /* Improve line spacing */
     }
 
     nav .fas {
         display: block;
-        font-size: 25px;
+        font-size: 22px; /* Smaller icon size for navigation */
     }
 
     nav ul {
@@ -344,51 +347,59 @@ nav .fas {
         padding-top: 50px;
         z-index: 2;
         transition: right 0.5s;
+        box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5); /* Add shadow for depth */
     }
 
     nav ul li {
         display: block;
-        margin: 25px;
+        margin: 20px 0; /* Adjust margin for better spacing */
+        font-size: 18px; /* Slightly smaller font size for list items */
     }
 
     nav ul .fas {
         position: absolute;
-        top: 25px;
-        left: 25px;
+        top: 15px; /* Adjusted position for close icon */
+        left: 15px; /* Adjusted position for close icon */
         cursor: pointer;
+        font-size: 24px; /* Larger close icon for better usability */
     }
 
     .sub-title {
-        font-size: 40px;
+        font-size: 36px; /* Slightly smaller subtitle */
     }
 
     .about-col-1,
     .about-col-2 {
-        flex-basis: 100%;
+        flex-basis: 100%; /* Stack columns on smaller screens */
+        padding: 0 15px; /* Add some padding for better spacing */
     }
 
     .about-col-1 {
-        margin-bottom: 30px;
+        margin-bottom: 20px; /* Adjusted margin for better layout */
     }
 
     .about-col-2 {
-        font-size: 14px;
+        font-size: 12px; /* Smaller font for additional information */
     }
 
     .tab-links {
-        font-size: 16px;
-        margin-right: 20px;
+        font-size: 14px; /* Smaller font size for tab links */
+        margin-right: 10px; /* Adjusted margin */
     }
 
     .contact-left,
     .contact-right {
-        flex-basis: 100%;
+        flex-basis: 100%; /* Stack contact sections on smaller screens */
+        padding: 0 15px; /* Add some padding */
     }
 
     .copyright {
-        font-size: 14px;
+        font-size: 12px; /* Smaller copyright text */
+        text-align: center; /* Center align copyright text */
+        padding: 10px 0; 
     }
 }
+
 
 #msg {
     color: #61b752;
