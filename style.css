@@ -318,23 +318,23 @@ nav .fas {
 @media only screen and (max-width: 600px) {
     #header {
         background-image: url(images/phone-background.png);
-        background-size: cover; /* Ensure background image covers the header */
-        background-position: center; /* Center the background image */
+        background-size: cover; 
+        background-position: center; 
     }
 
     .header-text {
-        margin-top: 80%; /* Reduced margin for better visibility */
-        font-size: 14px; /* Slightly smaller font for the header text */
+        margin-top: 80%; 
+        font-size: 14px; 
     }
 
     .header-text h1 {
-        font-size: 28px; /* Smaller font size for the main title */
-        line-height: 1.2; /* Improve line spacing */
+        font-size: 28px; 
+        line-height: 1.2; 
     }
 
     nav .fas {
         display: block;
-        font-size: 22px; /* Smaller icon size for navigation */
+        font-size: 22px; 
     }
 
     nav ul {
@@ -347,55 +347,54 @@ nav .fas {
         padding-top: 50px;
         z-index: 2;
         transition: right 0.5s;
-        box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5); /* Add shadow for depth */
-    }
+        box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5); 
 
     nav ul li {
         display: block;
-        margin: 20px 0; /* Adjust margin for better spacing */
-        font-size: 18px; /* Slightly smaller font size for list items */
+        margin: 20px 0; 
+        font-size: 18px;
     }
 
     nav ul .fas {
         position: absolute;
-        top: 15px; /* Adjusted position for close icon */
-        left: 15px; /* Adjusted position for close icon */
+        top: 15px; 
+        left: 15px;
         cursor: pointer;
-        font-size: 24px; /* Larger close icon for better usability */
+        font-size: 24px;
     }
 
     .sub-title {
-        font-size: 36px; /* Slightly smaller subtitle */
+        font-size: 36px; 
     }
 
     .about-col-1,
     .about-col-2 {
-        flex-basis: 100%; /* Stack columns on smaller screens */
-        padding: 0 15px; /* Add some padding for better spacing */
+        flex-basis: 100%; 
+        padding: 0 15px; 
     }
 
     .about-col-1 {
-        margin-bottom: 20px; /* Adjusted margin for better layout */
+        margin-bottom: 20px; 
     }
 
     .about-col-2 {
-        font-size: 12px; /* Smaller font for additional information */
+        font-size: 12px; 
     }
 
     .tab-links {
-        font-size: 14px; /* Smaller font size for tab links */
-        margin-right: 10px; /* Adjusted margin */
+        font-size: 14px; 
+        margin-right: 10px; 
     }
 
     .contact-left,
     .contact-right {
-        flex-basis: 100%; /* Stack contact sections on smaller screens */
-        padding: 0 15px; /* Add some padding */
+        flex-basis: 100%; 
+        padding: 0 15px; 
     }
 
     .copyright {
-        font-size: 12px; /* Smaller copyright text */
-        text-align: center; /* Center align copyright text */
+        font-size: 12px; 
+        text-align: center; 
         padding: 10px 0; 
     }
 }
