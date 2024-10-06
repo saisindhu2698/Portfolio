@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> <!-- W3Schools CSS -->
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/fontawesome/6.0.0/css/all.css"> <!-- W3Schools Font Awesome -->
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="images/logo.gif" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#Projects">Projects</a></li>
+                <li><a href="#Experience">Experience</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fas fa-times" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>Welcome To</p>
+            <h1>Sai Sindhu <span>Portfolio</span><br></h1>
+        </div>
+    </div>
+</div>
+<!-- -----------about---------- -->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/user.png">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>I'm Sai Sindhu Muppaneni, a recent Master’s graduate in Computer Science from Portland State University. I'm passionate about web development, data science, machine learning, and cloud computing, with hands-on experience in software testing and AI-driven projects. I thrive on solving complex problems and delivering innovative solutions.</p>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Programming Languages</span></li> Python, SQL, C, JavaScript, HTML, CSS,JAVA, Matlab <br>
+                        <li><span>Databases</span></li> PostgreSQL,  MySQL, MongoDB, Relational database<br>
+                        <li><span>Libraries</span></li> Bootstrap, React, Node.js, Python (NumPy, Pandas, Matplotlib)<br>
+                        <li><span>Tools</span></li> Git, Word, Excel, and PowerPoint,Jupyter Notebooks, Google Colab<br>
+                        <li><span>Cloud</span>	</li> AWS, GCP<br>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>2020 - 2022</span><br>Test Engineer at Arcserve</li>
+                        <li>Quality Test Engineer with 2 years of experience at Arcserve India Pvt Ltd, specializing in data backup and recovery solutions. I have designed and executed test plans across various storage environments, including tape, FSD, NAS, and SAN, while utilizing automated tools to enhance test coverage and reduce manual efforts. My collaboration with development teams has focused on identifying and resolving defects to continuously improve product quality.</li>
+                        <li>* Proficient in data backup and recovery testing methodologies.</li>
+                        <li>* Experienced with tape, FSD, NAS, and SAN storage systems.</li>
+                        <li>* Strong understanding of storage protocols and data deduplication techniques.</li>
+                        <li>* Skilled in using automated testing tools and software (e.g., Selenium, JMeter).</li>
+                        <li>* Excellent analytical and problem-solving abilities.</li>
+                        <li>* Strong communication and collaboration skills.</li>
+                        <li>* Familiar with scripting languages (e.g., Python, Bash) for test automation.</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2022-2024</span><br>Masters in Computer Science - Portland State Uiversity</li>
+                        <li><span> coursework</span> </li>Machine learning, Voice Assistants, Networking, AI, Software Engineering, Data Engineering, Data Structures, Algorithms, Operating Systems, Database Systems, NLP, CV and Deep Learning <br>
+                        <li><span>2020</span><br>Bacherols in Electronics and Communication Engineering - JNTU, Kakinada.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ---------Projects---------------- -->
+<div id="Projects">
+    <div class="container">
+        <h1 class="sub-title">My Projects</h1>
+        <div class="Projects-list">
+            <div>
+                <i class="fas fa-code"></i>
+                <h2>Voice Assistants Project</h2>
+                <p>Developed a voice application using Dialogflow to provide real-time planetary data through API integration. The app delivers insights on metrics like temperature, mass, gravitational force, and orbital parameters. By utilizing intents and entities, it effectively manages user queries, offering structured responses about planet characteristics and gravity comparisons. User testing confirmed high accuracy and satisfaction with the application’s performance.</p>
+                <button type="Voice_Application" class="btn btn1"><a href="https://github.com/saisindhu2698/Voice_Application"> Voice_Application</a></button>
+            </div>
+            <div>
+                <i class="fas fa-music"></i> <!-- Changed from fa-spotify to fa-music -->
+                <h2>Full_Stack Project</h2>
+                <p>Developed a music player website similar to Spotify, allowing users to play audio songs online. The site features a collection of music albums and multiple songs, complete with a user-friendly song controller button. Utilized Tailwind CSS for a modern and responsive UI design, enhancing the overall user experience.</p>
+                <button type="Spotify_clone" class="btn btn1"><a href="https://github.com/saisindhu2698/fullstackproject">Spotify_clone</a></button>
+            </div>
+            <div>
+                <i class="fas fa-code"></i>
+                <h2>Machine Learning Project</h2>
+                <p>Built a machine learning model using algorithms like KNN and Gradient Boosting for 
+                    high-accuracy tuberculosis detection. Preprocessed medical images, achieving improved diagnosis rates.</p>
+                <button type="Tuberculosis detection" class="btn btn1"><a href="https://github.com/saisindhu2698/MachineLearningProject">Tuberculosis detection</a></button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ----------contact------------- -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fas fa-paper-plane"></i> saisin2@pdx.edu</p>
+                <div class="social-icons">
+                    <a href="https://medium.com/@saisindhumuppaneni"><i class="fab fa-medium"></i></a>
+                    <a href="https://github.com/saisindhu2698"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/sindhu-muppaneni"><i class="fab fa-linkedin"></i></a> <!-- Added https:// for proper linking -->
+                </div>
+                <a href="images/my-resume.pdf" download class="btn btn2">Download Resume</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © Sai_Sindhu <i class="fas fa-heart"></i> web-dev project</p>
+    </div>
+</div>
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
+
+<script>
+
+    var sidemeu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemeu.style.right = "0";
+    }
+    function closemenu(){
+        sidemeu.style.right = "-200px";
+    }
+
+</script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbymfAXpO6XeIw8TFsLI4QzoFyl2F9HntHPjXGGaFpUmvevfUJc-GJ51fLLV1ZBalVQv/exec' // add your own app script link here
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+</script>
+</body>
+</html>
