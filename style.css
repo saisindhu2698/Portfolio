@@ -321,20 +321,21 @@ nav .fas {
     }
 
     .header-text {
-        margin-top: 100%;
+        margin-top: 30%;
         font-size: 16px;
     }
 
     .header-text h1 {
-        font-size: 30px;
+        font-size: 28px;
     }
 
-    nav .fas {
-        display: block;
-        font-size: 25px;
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
     }
 
-    nav ul {
+    #sidemenu {
+        flex-direction: column;
         background: #ff004f;
         position: fixed;
         top: 0;
@@ -342,13 +343,21 @@ nav .fas {
         width: 200px;
         height: 100vh;
         padding-top: 50px;
-        z-index: 2;
         transition: right 0.5s;
+        z-index: 2;
     }
 
-    nav ul li {
+    #sidemenu.show {
+        right: 0;
+    }
+
+    #sidemenu li {
+        margin: 25px 0;
+    }
+
+    nav .fas {
         display: block;
-        margin: 25px;
+        font-size: 25px;
     }
 
     nav ul .fas {
@@ -387,6 +396,10 @@ nav .fas {
 
     .copyright {
         font-size: 14px;
+    }
+
+    .fas {
+        font-size: 24px;
     }
 }
 
