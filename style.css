@@ -318,7 +318,7 @@ nav .fas {
 /* Medium Devices (tablets, 600px and up) */
 @media only screen and (max-width: 768px) {
     #header {
-        background-image: url(images/tablet-background.png); /* Change to a different background if needed */
+        background-image: url(images/phone-background.png); 
     }
 
     .header-text {
