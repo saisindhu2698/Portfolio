@@ -32,6 +32,9 @@ nav {
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
+    background-color: #333; /* New background color */
+    padding: 10px 20px; /* Added padding */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Added shadow */
 }
 
 .logo {
@@ -40,12 +43,12 @@ nav {
 
 nav ul {
     padding: 0;
+    display: flex; /* Changed to flex for better alignment */
+    gap: 20px; /* Added gap between items */
 }
 
 nav ul li {
-    display: inline-block;
     list-style: none;
-    margin: 10px 20px;
 }
 
 nav ul li a {
@@ -53,6 +56,14 @@ nav ul li a {
     text-decoration: none;
     font-size: 18px;
     position: relative;
+    padding: 10px 15px; /* Added padding */
+    border-radius: 5px; /* Added border radius */
+    transition: background 0.3s, color 0.3s; /* Added transition */
+}
+
+nav ul li a:hover {
+    background-color: #ff004f; /* New hover background color */
+    color: #fff; /* New hover text color */
 }
 
 nav ul li a::after {
@@ -63,7 +74,7 @@ nav ul li a::after {
     position: absolute;
     left: 0;
     bottom: -6px;
-    transition: 0.5s;
+    transition: width 0.5s;
 }
 
 nav ul li a:hover::after {
@@ -162,49 +173,86 @@ nav ul li a:hover::after {
 }
 
 /* Projects Section */
-#Projects {
-    padding: 50px 0;
+.projects-section {
+    padding: 60px 10%;
+    text-align: center;
+    background: #080808;
+    color: white;
 }
 
-.Projects-list {
+.projects-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    grid-gap: 40px;
-    margin-top: 50px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px;
+    justify-content: center;
+    align-items: stretch;
 }
 
-.Projects-list div {
-    background: #151515;
-    padding: 40px;
-    font-size: 13px;
-    font-weight: 300;
-    border-radius: 10px;
-    transition: background 0.5s, transform 0.5s;
+.project-card {
+    background: linear-gradient(135deg, #1e1e1e, #292929);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    text-align: center;
 }
 
-.Projects-list div i {
-    font-size: 50px;
-    margin-bottom: 30px;
+.project-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 24px rgba(255, 0, 79, 0.3);
 }
 
-.Projects-list div h2 {
-    font-size: 30px;
-    font-weight: 500;
+.project-card i {
+    font-size: 40px;
+    color: #ff004f;
     margin-bottom: 15px;
 }
 
-.Projects-list div a {
-    text-decoration: none;
-    text-align: center;
-    color: #2b2323;
-    font-size: 20px;
-    margin-top: 20px;
-    display: inline-block;
+.project-card h2 {
+    font-size: 22px;
+    margin-bottom: 10px;
+    color: #ff004f;
 }
 
-.Projects-list div:hover {
-    background: #bdb0b4;
-    transform: translateY(-10px);
+.project-card p {
+    font-size: 16px;
+    color: #bbb;
+    margin-bottom: 15px;
+}
+
+.btn1 {
+    display: inline-block;
+    padding: 12px 20px;
+    background: #ff004f;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: background 0.3s ease-in-out;
+}
+
+.btn1:hover {
+    background: #e60045;
+}
+
+@media (max-width: 768px) {
+    .projects-grid {
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 20px;
+    }
+
+    .project-card {
+        padding: 18px;
+    }
+
+    .project-card h2 {
+        font-size: 20px;
+    }
+
+    .project-card p {
+        font-size: 14px;
+    }
 }
 
 /* Contact Section */
@@ -301,14 +349,15 @@ form .btn2 {
     margin-top: 20px;
 }
 
-.copyright i {
+copyright i {
     color: #ff004f;
 }
 
-.copyright a {
+copyright a {
     color: #ff004f;
     text-decoration: none;
 }
+
 .social-icons a {
     text-decoration: none;
     font-size: 30px;
@@ -322,7 +371,6 @@ form .btn2 {
     color: #ff004f;
     transform: translateY(-5px);
 }
-
 
 /* Responsive CSS */
 @media only screen and (max-width: 768px) {
@@ -384,39 +432,6 @@ form .btn2 {
 
     .header-text h1 {
         font-size: 28px;
-    }
-
-    #sidemenu {
-        flex-direction: column;
-        background: #ff004f;
-        position: fixed;
-        top: 0;
-        right: -200px;
-        width: 200px;
-        height: 100vh;
-        padding-top: 50px;
-        transition: right 0.5s;
-        z-index: 2;
-    }
-
-    #sidemenu.show {
-        right: 0;
-    }
-
-    #sidemenu li {
-        margin: 25px 0;
-    }
-
-    nav .fas {
-        display: block;
-        font-size: 25px;
-    }
-
-    nav ul .fas {
-        position: absolute;
-        top: 25px;
-        left: 25px;
-        cursor: pointer;
     }
 
     .sub-title {
